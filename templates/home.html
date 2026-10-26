@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Home | Sandeep Yadav{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Systems Engineer · Cloud & DevOps</p>
+    <h1>Hi, I’m Sandeep Yadav.</h1>
+    <p>
+      I work across systems support, Linux and Windows environments, and cloud
+      operations. I’m building hands-on experience with containers and CI/CD.
+    </p>
+    <a class="button" href="{{ url_for('projects') }}">Explore my projects</a>
+  </div>
+</section>
+
+<section class="container">
+  <p class="eyebrow">Portfolio focus</p>
+  <h2>Reliable systems, practical automation</h2>
+  <div class="card-grid">
+    <article class="card">
+      <h3>Cloud operations</h3>
+      <p class="muted">AWS fundamentals, server environments, monitoring, and troubleshooting.</p>
+    </article>
+    <article class="card">
+      <h3>Containers & CI/CD</h3>
+      <p class="muted">A Flask application packaged with Docker and built through GitHub Actions.</p>
+    </article>
+    <article class="card">
+      <h3>Production support</h3>
+      <p class="muted">Incident response, root cause analysis, releases, and cross-team support.</p>
+    </article>
+  </div>
+</section>
+{% endblock %}

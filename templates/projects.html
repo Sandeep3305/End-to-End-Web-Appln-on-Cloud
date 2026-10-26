@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}Projects | Sandeep Yadav{% endblock %}
+
+{% block content %}
+<section class="container">
+  <p class="eyebrow">Selected work</p>
+  <h1>Projects</h1>
+  <p class="muted">Hands-on work connecting systems, data, and cloud technologies.</p>
+
+  <div class="card-grid">
+    <article class="card">
+      <p class="eyebrow">In progress</p>
+      <h2>Cloud application deployment</h2>
+      <p class="muted">
+        A Flask web app packaged with Docker, version-controlled on GitHub,
+        and built with GitHub Actions. AWS EC2 deployment is planned as the
+        next phase.
+      </p>
+      <span class="tag">Flask</span>
+      <span class="tag">Docker</span>
+      <span class="tag">GitHub Actions</span>
+      <span class="tag">AWS EC2 planned</span>
+    </article>
+
+    <article class="card">
+      <h2>AWS infrastructure automation</h2>
+      <p class="muted">
+        A resume project focused on automating cloud infrastructure and
+        application operations with Linux, Docker, Jenkins, Terraform, and
+        monitoring tools.
+      </p>
+      <span class="tag">AWS</span>
+      <span class="tag">Terraform</span>
+      <span class="tag">Jenkins</span>
+    </article>
+
+    <article class="card">
+      <h2>Banking dispute management</h2>
+      <p class="muted">
+        A data project using a relational database, SQL analysis, and a
+        dashboard to organize and report dispute-related information.
+      </p>
+      <span class="tag">SQL</span>
+      <span class="tag">Database</span>
+      <span class="tag">Dashboard</span>
+    </article>
+
+    <article class="card">
+      <h2>Fitness analytics chatbot</h2>
+      <p class="muted">
+        A resume project combining fitness data analysis with a conversational
+        interface.
+      </p>
+      <span class="tag">Python</span>
+      <span class="tag">Analytics</span>
+      <span class="tag">Chatbot</span>
+    </article>
+  </div>
+</section>
+{% endblock %}
